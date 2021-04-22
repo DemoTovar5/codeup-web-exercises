@@ -31,7 +31,7 @@
         //     } else if (color === "cyan") {
         //         console.log("I don't know anything about Cyan.")
         //     } else
-        //         console.log("I don't know that color.")
+        //         console.log("I don\'t know that color.")
         // }
 
         // console.log(analyzeColor("purple"));
@@ -70,7 +70,7 @@
         //             alert("I don't know anything about Cyan.");
         //             break;
         //         default:
-        //             alert(analyzeColor + "I don't know that color.");
+        //             alert(analyzeColor + "I don't know anything about" + color);
         //             break;
         //     }
         // }
@@ -113,14 +113,8 @@
 //              */
 
 
-             function calculateTotal() {
-
-                 calculateTotal(1,10)
-                 calculateTotal(2,25)
-                 calculateTotal(3,35)
-                 calculateTotal(4,50)
-                 calculateTotal(5,100)
-             }
+             function calculateTotal(lucky,total) {
+                 if(lucky)
 
 
 
@@ -132,7 +126,7 @@
 //              * price before the discount was, and what their price after the discount is.
 //              */
 // // Generate a random number between 0 and 6
-// // var luckyNumber = Math.floor(Math.random() * 6);
+//                     var luckyNumber = Math.floor(Math.random() *  6);
 //
 //
 //
@@ -157,5 +151,8 @@
 //              */
 //
 
-        }
+
+
+             }
 )()
+
