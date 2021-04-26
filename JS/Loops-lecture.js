@@ -20,3 +20,18 @@
 // }
 //
 //
+
+// TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
+//  odd number, print "odd"
+// // HINT: remember the remainder operator (modulo)
+// // TODO: loop through numbers 1 - 40. Print "marco" if it's divisible by 3. Print "polo" if it's divisible by 5.
+//  If it's neither print "I'm not playing"
+//  Print "marco polo" if it's divisible by 3 and 5.
+
+function Numbers() {
+    for (let i = 0; i <= 30; i++); {
+        if (i) ;
+    }
+}
+
+
