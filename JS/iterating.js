@@ -26,18 +26,22 @@
     //  */
     //
 
-    for (let i = 0; i < friendsNames.length; i++) {
-
-        console.log(friendsNames[i])
-
-    }
-
+    // console.log(friendsNames[0]);
+    // console.log(friendsNames[1]);
+    // console.log(friendsNames[2]);
+    // console.log(friendsNames[3]);
+    //
     // /**
     //  * TODO:
     //  * Write some code that uses a for loop to log every item in the names
     //  * array.
     //  */
+
+    // for (let i = 0; i < friendsNames.length; i++) {
     //
+    //     console.log(friendsNames[i])
+    // }
+
     // /**
     //  * TODO:
     //  * Refactor your above code to use a `forEach` loop
