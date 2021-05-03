@@ -64,6 +64,17 @@ function isCorrectFruit(fruit){
 
 }
 
+function trim(input) {
+    return input.trim();
+}
+
+console.log(trim(" River"));
+
+
+
+
+
+
 
  }
  )()

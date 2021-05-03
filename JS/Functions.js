@@ -12,12 +12,11 @@
 //  * > sayHello("codeup") // returns "Hello, codeup!"
 //  */
 
-function sayHello(name) {
-    return ("Hello, " + name);
-}
+// function sayHello(name) {
+//     return ("Hello, " + name + "!");
+// }
+//
 
-        //
- //        /**
  // * TODO:
  // * Call the function 'sayHello' and pass your name as a string literal argument.
  // * Store the result of the function call in a variable named 'helloMessage'.
@@ -25,17 +24,12 @@ function sayHello(name) {
  // * console.log 'helloMessage' to check your work
  // */
 
-        // function sayMyName(myname){
-        //     console.log(myname);
-        //     return myname;
-        // }
-        //
-        // sayMyName("Laura"); //Laura
-        // sayMyName("Demo"); //Demo
-
-          var helloMessage = sayHello("Demo");
-
-        console.log(helloMessage);
+      // var helloMessage = function sayHello() {
+      //     return "Demo"
+      // }
+      //
+      //   console.log(helloMessage)
+      //
 
 
 // /**
@@ -45,10 +39,10 @@ function sayHello(name) {
 //  * console.
 //  */
 
-        var myName = "Demo"
-
-        console.log(sayHello(myName));
-
+        // var myName = "Demo"
+        //
+        // console.log(sayHello(myName));
+        //
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -97,12 +91,12 @@ var random = Math.floor((Math.random() * 3) + 1);
 //  * > calculateTip(0.15, 33.42) // returns 5.013
 //  */
 
-     function calculateTip(tip,total)
-     {
-         return (tip * total)
-     }
-
-     console.log(calculateTip(0.20, 20));
+     // function calculateTip(tip,total)
+     // {
+     //     return (tip * total)
+     // }
+     //
+     // console.log(calculateTip(0.20, 20));
 
 
 // /**
@@ -111,10 +105,10 @@ var random = Math.floor((Math.random() * 3) + 1);
 //  * prompt the user for the bill total and a percentage they would like to tip,
 //  * then display the dollar amount they should tip
 //  */
-        var tip = prompt("What would you like to tip?")
-        var total = prompt("What is your total Bill?")
-
-        console.log(calculateTip(tip, total));
+//         var tip = prompt("What would you like to tip?")
+//         var total = prompt("What is your total Bill?")
+//
+//         console.log(calculateTip(tip, total));
 
         //
 // /**
@@ -132,14 +126,14 @@ var random = Math.floor((Math.random() * 3) + 1);
 //  * > applyDiscount(45.99, 0.12) // 40.4712
 //  */
 
-        function applyDiscount(price,discount){
-           return price-(price*discount)
-
-        }
-        var price = 50
-        var discount = .25
-        console.log(applyDiscount(price,discount));
-
+        // function applyDiscount(price,discount){
+        //    return price-(price*discount)
+        //
+        // }
+        // var price = 50
+        // var discount = .25
+        // console.log(applyDiscount(price,discount));
+        //
 
 
 
