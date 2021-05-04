@@ -1,0 +1,50 @@
+/* CSS */
+
+/* THIS IS HOW YOU COMMENT IN CSS */
+
+/*What elements are you styling on your html page*/
+selector {
+    /*actual style changes lives inside curly brackets*/
+    property: value
+/*property: what about the element you want to change*/
+/*value: what you want to change about the property    */
+
+/*property and value seperated by colon*/
+/*  end every decleration with a semicolon  */
+}
+
+
+h1{
+    color: red;
+    font-size: 30px;
+    border: 2px dotted black;
+}
+
+/*select by element name - tag*/
+
+p, li {
+    color:mediumpurple;
+}
+
+/*select by class name*/
+.pink{
+    color:pink;
+}
+
+/*select by id name, Id can only be used once in your code, class you can use multiple*/
+
+#teal {
+    color: teal;
+}
+
+.border{
+    border: 2px solid orange;
+}
+
+#yellow-border {
+    border: 2px solid yellow;
+}
+
+h1:hover {
+    color: green;
+}
