@@ -1,6 +1,6 @@
-(function(){
+(function() {
 
-    "use strict";
+        "use strict";
 
         /* ########################################################################## */
 
@@ -21,7 +21,7 @@
         //  * Test your function by passing various string literals to it and
         //  * console.logging the function's return value
         //  */
-
+        //
         // function analyzeColor(color) {
         //
         //     if (color === "blue") {
@@ -33,16 +33,16 @@
         //     } else
         //         console.log("I don\'t know that color.")
         // }
-
-        // console.log(analyzeColor("purple"));
+        //
+        // console.log(analyzeColor("blue"));
 
 //        Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-            var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //             /**
 //              * TODO:
 //              * Pass the `randomColor` variable to your function and console.log the results.
@@ -50,7 +50,7 @@
 //              */
 //
 //         console.log(analyzeColor(randomColor));
-
+//
 
 //            /**
 //              * TODO:
@@ -74,8 +74,8 @@
         //             break;
         //     }
         // }
-
-
+        //
+        // console.log(analyzeColor("blue"))
 
 
         //**
@@ -84,11 +84,11 @@
 //              * user to your `analyzeColor` function. Alert the return value from your
 //              * function to show it to the user.
 //              */
-
-               // var colorPrompt = prompt("Pick a color!");
-               //
-               // console.log(analyzeColor(colorPrompt));
-
+//
+//                var colorPrompt = prompt("Pick a color!");
+//
+//                console.log(analyzeColor(colorPrompt));
+//
 
 //             /* ########################################################################## */
 //
@@ -113,10 +113,25 @@
 //              */
 
 
-             function calculateTotal(lucky,total) {
-                 if(lucky)
+        // function calculateTotal(lucky, total) {
+        //     if (lucky === 0) {
+        //         return total
+        //     } else if (lucky === 1) {
+        //         return total * .90
+        //     } else if (lucky === 2) {
+        //         return total * .75
+        //     } else if (lucky === 3) {
+        //         return total * .65
+        //     } else if (lucky === 4) {
+        //         return total * .50
+        //     } else if (lucky === 5) {
+        //         return "YOU WIN! Everything is free!"
+        //     }
+        //
+        // }
 
-
+        //
+        // console.log(calculateTotal(5,100))
 
 //             /**
 //              * TODO:
@@ -126,10 +141,12 @@
 //              * price before the discount was, and what their price after the discount is.
 //              */
 // // Generate a random number between 0 and 6
-//                     var luckyNumber = Math.floor(Math.random() *  6);
-//
-//
-//
+        var luckyNumber = Math.floor(Math.random() * 6);
+
+        var promptToUser = prompt("What is your total bill amount?")
+
+
+
 //
 //
 //
@@ -152,7 +169,6 @@
 //
 
 
-
-             }
-)()
+    }
+)();
 
