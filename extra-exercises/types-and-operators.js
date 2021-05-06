@@ -1,29 +1,29 @@
 (function(){
 "use strict";
-
-function isOdd(num) {
-    return num % 2 !== 0;
-}
-
-function isEven(num) {
-    return num % 2 === 0;
-}
-
-function identity(input) {
-    return input === input;
-}
-
-function isTrue(input){
-    return input === true;
-}
-
-function isFalse(input){
-    return input === false;
-}
-
-function isTruthy(input) {
-    return input == true;
-}
+//
+// function isOdd(num) {
+//     return num % 2 !== 0;
+// }
+//
+// function isEven(num) {
+//     return num % 2 === 0;
+// }
+//
+// function identity(input) {
+//     return input === input;
+// }
+//
+// function isTrue(input){
+//     return input === true;
+// }
+//
+// function isFalse(input){
+//     return input === false;
+// }
+//
+// function isTruthy(input) {
+//     return input == true;
+// }
 //
 // function isFalsy(input){
 //     return input == false;
@@ -86,29 +86,29 @@ function isTruthy(input) {
 //  -> You may be using a few different string methods
 //  -> If the input is numeric or not a string, return false
 
-function mockingCase(str) {
-
-    str = str.toLowerCase();
-
-    let stickyArr = str.split("");
-
-    let wordsCased = [];
-
-    for (let i = 0; i < stickyArr.length; i++) {
-        if(i % 2 === 0) {
-           wordsCased.push(stickyArr[i].toUpperCase());
-        } else {
-            wordsCased.push(stickyArr[i].toLowerCase());
-        }
-
-    }
-
-    return wordsCased.join(" ");
-
-}
-
-console.log(mockingCase("hello world"))
-
+// function mockingCase(str) {
+//
+//     str = str.toLowerCase();
+//
+//     let stickyArr = str.split("");
+//
+//     let wordsCased = [];
+//
+//     for (let i = 0; i < stickyArr.length; i++) {
+//         if(i % 2 === 0) {
+//            wordsCased.push(stickyArr[i].toUpperCase());
+//         } else {
+//             wordsCased.push(stickyArr[i].toLowerCase());
+//         }
+//
+//     }
+//
+//     return wordsCased.join(" ");
+//
+// }
+//
+// console.log(mockingCase("hello world"))
+//
 
 
 
