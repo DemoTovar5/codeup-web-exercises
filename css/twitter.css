@@ -85,29 +85,29 @@ a {
 }
 
 .timeline {
-    position:absolute;
-    right:200px;
-    top:600px;
-    width:50%;
+    width:calc(48% - 1em);
+    position:relative;
+    top:-170px;
     margin-left:.5em;
     margin-right:.5em;
+    display:inline-block;
 }
 
 .who-to-follow {
-    position:absolute;
-    right:100px;
-    top:600px;
-    width:25%;
-    margin-left:.5em;
-    margin-right:.5em;
+    width:calc(25% - 1em);
+    margin-left: .5em;
+    margin-right: .5em;
+    display: inline-block;
 }
 
 .profile-details {
-    width:25%;
-    position:absolute;
-    top:400px;
+    width:calc(25% - 1em);
+    position:relative;
+    top:-400px;
     margin-left: .5em;
-    margin-right:.5em;
+    margin-right: .5em;
+    display: inline-block;
+
 }
 
 .profile-form{
