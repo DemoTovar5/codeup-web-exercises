@@ -41,8 +41,8 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//         var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//         var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //             /**
 //              * TODO:
 //              * Pass the `randomColor` variable to your function and console.log the results.
@@ -141,34 +141,67 @@
 //              * price before the discount was, and what their price after the discount is.
 //              */
 // // Generate a random number between 0 and 6
-        var luckyNumber = Math.floor(Math.random() * 6);
-
-        var promptToUser = prompt("What is your total bill amount?")
-
-
-
+//         var luckyNumber = Math.floor(Math.random() * 6);
 //
-//
-//
-//             /**
-//              * TODO:
-//              * Write some JavaScript that uses a `confirm` dialog to ask the user if they
-//              * would like to enter a number. If they click 'Ok', prompt the user for a
-//              * number, then use 3 separate alerts to tell the user:
-//              *
-//              * - whether the number is even or odd
-//              * - what the number plus 100 is
-//              * - if the number is negative or positive
-//              *
-//              * if what the user enters is not a number, use an alert to tell them that, and
-//              * do *not* display any of the above information.
-//              *
-//              * Can you refactor your code to use functions?
-//              * HINT: The way we prompt for a value could be improved
-//              */
+//         var promptToUser = prompt("What is your total bill amount?")
 //
 
 
-    }
+        /**
+         * TODO:
+         * Write some JavaScript that uses a `confirm` dialog to ask the user if they
+         * would like to enter a number. If they click 'Ok', prompt the user for a
+         * number, then use 3 separate alerts to tell the user:
+         *
+         * - whether the number is even or odd
+         * - what the number plus 100 is
+         * - if the number is negative or positive
+         *
+         * if what the user enters is not a number, use an alert to tell them that, and
+         * do *not* display any of the above information.
+         *
+         * Can you refactor your code to use functions?
+         * HINT: The way we prompt for a value could be improved
+         */
+
+numberGame()
+
+
+}
 )();
 
+function numberGame() {
+
+    var confirmNumber = confirm("Would you like to enter a number?");
+
+    if (confirmNumber) {
+        var userNumber = prompt("Enter your number");
+        var userInt = parseInt(userNumber);
+        if (isNaN(userInt)) {
+            alert ("This is not a number")
+            return
+        }
+        else if (userInt % 2 === 0) {
+            alert("This number is even");
+        } else if (userInt % 2 !== 0) {
+            alert("This number is odd");
+        }
+
+        alert("Your number plus 100 is: " + (userInt + 100));
+        if (userInt < 0) {
+            alert("This number is negative");
+        } else if (userInt > 0) {
+            alert ("This number is positive");
+        }
+
+    }
+
+
+
+    else {
+        alert("Operation Canceled!");
+    }
+
+
+
+}
