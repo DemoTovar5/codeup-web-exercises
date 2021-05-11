@@ -12,6 +12,13 @@
  *  > console.log(person.lastName) // "Sanchez"
  */
 
+// var person = {}
+//
+//     person.firstName = "Demetrio";
+//     person.lastName = "Tovar";
+//
+// console.log(person);
+
 /**
  * TODO:
  * Add a sayHello method to the person object that returns a greeting using
@@ -21,6 +28,12 @@
  * Example
  * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
  */
+
+// function sayHello() {
+//     return `Hello from ${person.firstName} ${person.lastName}!`;
+// }
+//
+// console.log(sayHello());
 
 /** TODO:
  * HEB has an offer for the shoppers that buy products amounting to
@@ -41,6 +54,21 @@
 //     {name: 'Ryan', amount: 250},
 //     {name: 'George', amount: 320}
 // ];
+//
+// shoppers.forEach(Discount);
+//
+// function Discount(shopper){
+//     console.log(`${shopper.name} Had a bill of $${shopper.amount}`);
+//
+//     if(shopper.amount > 200) {
+//         var appliedDiscount = (shopper.amount * .12);
+//         var discountPrice = (shopper.amount - appliedDiscount);
+//         console.log(`${shopper.name} New total after discount is $${discountPrice}`);
+//     }
+//
+// }
+
+
 
 /** TODO:
  * Create an array of objects that represent books and store it in a
@@ -54,6 +82,20 @@
  * > console.log(books[0].author.firstName) // "Douglas"
  * > console.log(books[0].author.lastName) // "Adams"
  */
+
+
+var books = [
+        {title:"The Lovely Bones", author:{firstName:"Alice",lastName:"Sebold"}},
+        {title:"Gone Girl", author:{firstName:"Gillian",lastName:"Flynn"}},
+        {title:"Angels & Demons", author:{firstName:"Dan",lastName:"Brown"}},
+        {title:"Water for Elephants" ,author:{firstName:"Sara",lastName:"Gruen"}},
+        {title:"The Kite Runner", author:{firstName:"Khaled",lastName:"Hosseini"}}
+]
+
+    // console.log(books[1].title);
+    // console.log(books[1].author.firstName);
+    // console.log(books[1].author.lastName);
+
 
 /**
  * TODO:
@@ -79,6 +121,18 @@
  *      ---
  *      ...
  */
+
+function Book(obj) {
+    for (let i = 0; i < obj.length; i++) {
+        console.log(`Book # ${i+1}`)
+        console.log(`Title: ${obj[i].title}`)
+        console.log(`Author: ${obj[i].author.firstName} ${obj[i].author.lastName}`)
+        console.log("---")
+    }
+}
+
+Book(books)
+
 
 /**
  * Bonus:

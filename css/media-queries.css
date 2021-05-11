@@ -1,0 +1,28 @@
+
+@media screen and (max-width: 600px) {
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+    @media screen and (max-width: 600px){
+        a {
+
+        }
+    }
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    display: flex
+}
