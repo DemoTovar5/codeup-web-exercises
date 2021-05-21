@@ -39,17 +39,17 @@
 
 // Perhaps the content in the body (below the navbar) should change when a user clicks a sus link
 
-// setSuspectEvent();
-// function setSuspectEvent() {
-//     document.getElementById("sus")
-//         .addEventListener("click", appendSusNode);
-// }
-//
-// function appendSusNode() {
-//     document.getElementById("sus-group")
-//         .appendChild(getImageNode());
-// }
-//
+setSuspectEvent();
+function setSuspectEvent() {
+    document.getElementById("sus")
+        .addEventListener("click", appendSusNode);
+}
+
+function appendSusNode() {
+    document.getElementById("sus-group")
+        .appendChild(getImageNode());
+}
+
 function getImageNode() {
     let imageNode = document.createElement("img");
     imageNode.setAttribute("src", "assets/images/sus.gif");
