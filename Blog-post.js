@@ -12,7 +12,4 @@ function addPost() {
 addButtonEvent()
 
 
-function changeColor() {
-    var color = document.getElementById("submitBtn")
-    
-}
+function
