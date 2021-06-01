@@ -6,22 +6,22 @@
 //       console.log("Now the number is:" + numbers)
 // }
 
-var allCones = Math.floor(Math.random() * 50) + 50;
-
-var wantedCones = Math.floor(Math.random() * 5) + 1;
-
- do{
-
-     if (wantedCones > allCones) {
-         console.log("I'm sorry, you wanted ${wantedCones}, but we only have ${allCones}")
-         continue;
-     }
-      console.log
-
-     allCones -= wantedCones;
-
-
- }while(allCones > 0)
+// var allCones = Math.floor(Math.random() * 50) + 50;
+//
+// var wantedCones = Math.floor(Math.random() * 5) + 1;
+//
+//  do{
+//
+//      if (wantedCones > allCones) {
+//          console.log("I'm sorry, you wanted ${wantedCones}, but we only have ${allCones}")
+//          continue;
+//      }
+//       console.log
+//
+//      allCones -= wantedCones;
+//
+//
+//  }while(allCones > 0)
 
 // // TODO: A parking lot with 30 parking spaces wants to display the amount of spaces available as it gets filled.
 //  Let's assume that there are allowing two cars into the parking lot at a time. As those cars take up spaces,
@@ -41,3 +41,8 @@ var wantedCones = Math.floor(Math.random() * 5) + 1;
 //
 
 
+band.shred = function() {
+    console.log('RAAAAAAAAAA!!!!');
+}
+
+band.function();
