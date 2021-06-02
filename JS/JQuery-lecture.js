@@ -28,3 +28,13 @@ $(window).load(function() {
 $(document).ready(function() {
     $(".orange").hide();
 });
+
+$('#blue').css("color","blue")
+
+$("p , div").css("border","3px, solid, blue") // has to be one string to select multiple elements
+// also has to be separated by a comma.
+
+let firstPar = $("#blue"); // you can save selectors to variables //
+
+firstPar.css("color", "pink")
+
