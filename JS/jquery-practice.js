@@ -12,16 +12,30 @@
     addClickEvents(jqElements, backgroundReset, backgroundBlue);
     addClickEvents($(".card"), "", "red");
     //make sure the DOM is loaded first
-    document.addEventListener("DOMContentLoaded", function() {
-        addListeners();
+    $(document).ready(function() {
+        alert ("Dom has finished loading!")
     });
-    //parent method for adding all listeners
-    function addListeners(){
+    // parent method for adding all listeners
+
         //get the elements to add listener and change image
-        let cardContainers = Array.from(document.querySelectorAll(".col-md-3"));
-        addEvents(cardContainers, 'images/jazz-music-rubber-duck.jpg', 'mouseover');
-        addEvents(cardContainers, 'images/question.png', 'mouseout');
-    }
+        // $('.col-md-3 ').hover(
+        //     function() {
+        //         $(this).find('background-image', 'jazz-music-rubber-duck.jpg');
+        //     },
+        //     function() {
+        //         $(this).find('background-image', 'question.png');
+        //     }
+        //     );
+
+        $(".col-md-3").hover(function (){
+            $(this).find(".img-fluid").attr("src", "images/jazz-music-rubber-duck.jpg")
+        },function (){
+            $(this).find(".img-fluid").attr("src", "images/question.png")
+        })
+
+        // addEvents(cardContainers, 'images/jazz-music-rubber-duck.jpg', 'mouseover');
+        // addEvents(cardContainers, 'images/question.png', 'mouseout');
+
     // add mouseover/mouseout events to all selected elements
     function addEvents(cardContainers, imgPath, listenerType){
         cardContainers.forEach((cc) => {
@@ -39,3 +53,4 @@
         card.setAttribute('src', imgPath);
     }
 })();
+
