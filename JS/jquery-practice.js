@@ -95,22 +95,30 @@
 //  -> When the li is clicked again, reset the li background color to its original color
 //      -> Don't worry about changing the text back
 
+// $(document).ready(function(){
+//     $('.list-group-item').click(function(){
+//         $(this).css("text-transform" , "uppercase");
+//         $(this).toggleClass(list-group-item")
+//     });
+// });
+
+// TODO: Change up the submit button event
+//  -> Add a new input with an id of #redirect-url
+//  -> Remove the old click events from #submitBtn
+//  -> When the user clicks #submitBtn, redirect the page to the value of #redirect-url
+//  -> HINT: You can either add a new input or change the id of an existing input element to #redirect-url to save time
+
 $(document).ready(function(){
-    $('.list-group-item').click(function(){
-        $(this).css("text-transform" , "uppercase");
+    $('#redirect-url').click(function(){
+        $(this).attr('href', 'https://stackoverflow.com');
     });
 });
 
-$(".list-group-item").css("background-color", "blue");
 
-$(document).ready(function(){
-    $('.list-group-item').click(function(event){
-        event.preventDefault();
-        $(this).toggleClass('background-color');
-    });
+// TODO: After a 2 second delay (BOM), when the user loads the page, change #main-title to a value of your choosing
+//  (change text, background color, what have you)!
+
+$(document).ready(function() {
+    $('#main-title').css("text-transform", "uppercase").css("background-color" , "red");
+    setTimeout(5000);
 });
-
-
-
-
-
