@@ -27,28 +27,60 @@
 //  any data required for that post to be made successfully
 // TODO: what status do you get back when making a GET request to: https://jsonplaceholder.typicode.com/cmments
 
-console.log($.ajax("https://jsonplaceholder.typicode.com/"));
-
-console.log($.ajax("https://jsonplaceholder.typicode.com/posts",{
-type: "POST",
-    data: {
-    userId: 1,
-    id:1,
-        "title":"blah blah blah",
-    body: "blah blah blah blah",
-    }
-}));
-
-console.log($.ajax("https://jsonplaceholder.typicode.com/comments",{
-    type: "GET",
-}));
+// console.log($.ajax("https://jsonplaceholder.typicode.com/"));
+//
+// console.log($.ajax("https://jsonplaceholder.typicode.com/posts",{
+// type: "POST",
+//     data: {
+//     userId: 1,
+//     id:1,
+//         "title":"blah blah blah",
+//     body: "blah blah blah blah",
+//     }
+// }));
+//
+// console.log($.ajax("https://jsonplaceholder.typicode.com/comments",{
+//     type: "GET",
+// }));
 
 
 // RESPONSES
 
+// $.ajax("https://jsonplaceholder.typicode.com/posts").done(function(data,status,jqXhr){
+//     console.log(data);
+//     console.log(status);
+//     console.log(jqXhr);
+//     alert("your request has been completed!");
+// })
+
 // SUCCESSFUL
 
+// $.ajax("https://jsonplaceholder.typicode.com/posts").done(function(data,status,jqXhr){
+//     console.log(data);
+//     console.log(status);
+//     console.log(jqXhr);
+//     alert("your request has been completed!");
+// })
+
 // FAILED
+// there is a typo at THE END of the URL.
+$.ajax("https://jsonplaceholder.typicode.com/psts",{
+    type: "POST",
+    data: {
+        userId: 1,
+        id:1,
+        "title":"blah blah blah",
+        body: "blah blah blah blah",
+    }
+}).fail(function(jqHxr,status,error){
+    console.log(jqHxr);
+    console.log(status); // 400 = failed request
+    console.log(error);
+})
 
 // ALWAYS
+
+$.ajax("https://jsonplaceholder.typicode.com/psts").always(function(){
+    alert("thank you for being here today!")
+    })
 
