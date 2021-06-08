@@ -108,17 +108,34 @@
 //  -> When the user clicks #submitBtn, redirect the page to the value of #redirect-url
 //  -> HINT: You can either add a new input or change the id of an existing input element to #redirect-url to save time
 
-$(document).ready(function(){
-    $('#redirect-url').click(function(){
-        $(this).attr('href', 'https://stackoverflow.com');
-    });
-});
+// $(document).ready(function(){
+//     $('#redirect-url').click(function(){
+//         $(this).attr('href', 'https://stackoverflow.com');
+//     });
+// });
 
 
 // TODO: After a 2 second delay (BOM), when the user loads the page, change #main-title to a value of your choosing
 //  (change text, background color, what have you)!
 
-$(document).ready(function() {
-    $('#main-title').css("text-transform", "uppercase").css("background-color" , "red");
-    setTimeout(5000);
+// $(document).ready(function() {
+//     $('#main-title').css("text-transform", "uppercase").css("background-color" , "red");
+//     setTimeout(5000);
+// });
+
+// TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control
+//  (be sure to tell them which control was empty)
+
+$(document).ready(function(){
+    $('#submitBtn').click(function(){
+        if($("#first").val() === '' || $("#last").val() === '' || $("#handleField").val() === ''){
+            alert('Please fill the form. Do not leave it empty!');
+        } else {
+            console.log($('#first').val())
+            console.log($('#last').val())
+            console.log($('#handleField').val())
+        }
+    });
 });
+
