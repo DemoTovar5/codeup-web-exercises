@@ -70,9 +70,9 @@
 //     })
 // });
 //
-// $("#main-title").click(function(){
-//     $(this).css('font-size' , '4em');
-// });
+$("#main-title").click(function(){
+    $(this).css('ba');
+});
 
 // TODO: Add a data-attribute to each card container (.col-md-3)
 //  -> Give that data-attribute a value of 1-4 (moving top to bottom in the html)
@@ -118,10 +118,10 @@
 // TODO: After a 2 second delay (BOM), when the user loads the page, change #main-title to a value of your choosing
 //  (change text, background color, what have you)!
 
-// $(document).ready(function() {
-//     $('#main-title').css("text-transform", "uppercase").css("background-color" , "red");
-//     setTimeout(5000);
-// });
+$(document).ready(function() {
+    $('#main-title').css("text-transform", "uppercase").css("background-color, red");
+    setTimeout(5000);
+});
 
 // TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
 //  -> If any of the fields are empty, alert the user to fill the empty control
